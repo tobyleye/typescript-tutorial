@@ -6,10 +6,7 @@ function filterByTerm(input, searchTerm) {
         throw Error("inputArr cannot be empty");
     var regex = new RegExp(searchTerm, "i");
     return input.filter(function (arrayElement) {
-        if (arrayElement.url) {
-            return arrayElement.url.match(regex);
-        }
-        return "wow i love typescript already";
+        return arrayElement.url.match(regex);
     });
 }
 var obj1 = { url: 'python' };
