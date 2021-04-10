@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-   "target": "es5",
+   "target": "ES5",
    "strict": true,
-  }
+   "outDir": "./dist",
+   "rootDir": "./src",
+  },
+  "exclude": ["./src/examples", "./node_modules"]
 }
